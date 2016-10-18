@@ -400,7 +400,6 @@ func (i *Indexer) Close() {
 			log.Errorf("index: %s Close() error(%v)", i.File, err)
 		}
 	}
-	i.Offset = 0
 	i.closed = true
 	i.LastErr = errors.ErrIndexClosed
 	return
